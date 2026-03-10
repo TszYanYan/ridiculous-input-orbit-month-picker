@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Earth Orbit Month Picker</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <title>Orbit Month Picker</title>
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>      
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!--Styles go here-->
+    <link rel="stylesheet" hrf="styles.css" />
+  </head>
+  
+  <body>
+    <header class="header">
+      <h1 class="title">Birth Month (Orbit Picker)</h1>
+      <p class="subtitle">
+        Pause the Earth at the right moment to select your birth month + year.
+      </p>
+    </header>
+    
+    <main class="main">
+      <form class="form" id="birth-form">
+        <label class="label" for="birth-month">Birthday (month and year)</label>
+        
+        <input type="month" id="birth-month" name="birth-month" class="native-month" />
+        
+        <section class="orbit-wrap" aria-label="Orbit month picker">
+          <div class="sun" aria-hidden="true"></div>
+          
+          <div class="orbit">
+            <div class="earth" id="earth" aria-hidden="ture"></div>
+          </div>
+          
+          <div class="readout" role="status" aria-live="polite">
+            <div class="readout-label">Selected</div>
+            <div class="readout-value" id="readout">January 2000</div>
+          </div>
+        </section>
+        
+        <div class="controls">
+          <button type="button" class="btn" id="toggle-btn">Pause orbit</button>
+          <button type="button" class="btn btn-ghost" id="lock-btn">Lock selection</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+        <p class="Locked" id="locked"></p>
+      </form>
+    </main>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
